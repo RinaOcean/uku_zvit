@@ -1,0 +1,54 @@
+.introduction {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 100%;
+  height: fit-content;
+  background-image: url("../../imgs/Introduction/Rectangle1.png"),
+    url("../../imgs/Introduction/dots.png"),
+    url("../../imgs/Introduction/Rectangle3.png"),
+    url("../../imgs/Introduction/Rectangle2.png"),
+    url("../../imgs/Introduction/Ellipse.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top -120px right 0px, top 0px right 60px,
+    left bottom -80px, left bottom -220px, bottom 40px right 115px;
+}
+
+.headingWrapper {
+  display: flex;
+  width: 715px;
+  padding: 35px 55px 35px 240px;
+  border-top-right-radius: 95px;
+  border-bottom-right-radius: 95px;
+  background-color: rgb(102, 45, 145);
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+.introductionTextWrapper {
+  display: flex;
+  padding-top: 50px;
+}
+
+.introductionText {
+  text-align: left;
+  font-size: 20px;
+}
+
+.imgWrapper {
+  margin-left: 78px;
+  min-width: 333px;
+  height: 411px;
+}
+
+.nameWrapper {
+  font-size: 16px;
+  padding-top: 10px;
+  padding-left: 190px;
+}
+
+.name {
+  font-weight: 700;
+}

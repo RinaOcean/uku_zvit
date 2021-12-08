@@ -7,8 +7,8 @@ const Header = ()=>{
     <header className={styles.header}>
     <div className={styles.headerLabel}>
       
-      <object type="image/svg+xml" data={facultyLogoSvg} width="272" height="110">
-        <img src={facultyLogoPng} width="272" height="110" alt="logo image" />
+      <object type="image/svg+xml" data={facultyLogoSvg} width="250" height="101">
+        <img src={facultyLogoPng} width="250" height="101" alt="logo image" />
       </object>
       <span>Звіт 2020-2021</span>
     </div>

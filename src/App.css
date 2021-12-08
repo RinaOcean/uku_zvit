@@ -20,9 +20,10 @@
 }
 
 .App {
-  text-align: center;
+  text-align: left;
   font-family: "CirceRounded";
   font-weight: 600;
+  color: #58595b;
 }
 
 .App-logo {
