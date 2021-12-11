@@ -27,20 +27,32 @@
   letter-spacing: 0.25em;
 }
 
-.introductionTextWrapper {
+.textWrapper {
   display: flex;
-  padding-top: 50px;
+  margin-top: 50px;
 }
 
-.introductionText {
+.text {
   text-align: left;
   font-size: 20px;
+  /* width: 70%; */
+  margin: 0;
+}
+
+.wrapper {
+  margin-left: 71px;
+  /* width: 30%; */
 }
 
 .imgWrapper {
-  margin-left: 78px;
-  min-width: 333px;
-  height: 411px;
+  min-width: 380px;
+  height: 381px;
+  border-radius: 64px;
+  overflow: hidden;
+}
+
+.imgWrapper img {
+  object-fit: cover;
 }
 
 .nameWrapper {

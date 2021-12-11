@@ -1,6 +1,6 @@
 import styles from './Introduction.module.css';
 import Container from '../Container'
-import decan from '../../imgs/Introduction/rector.png'
+import decan from '../../imgs/Introduction/dekan.jpg'
 
 const Introduction =() =>{
   return(
@@ -9,7 +9,7 @@ const Introduction =() =>{
         <h2>слово декана</h2>
       </div>
       <Container>
-      <div className={styles.introductionTextWrapper}>
+      <div className={styles.textWrapper}>
         <p className={styles.introductionText}>
           <h3>Слава Ісусу Христу!<br/>
           Дорогі у Христі брати і сестри!</h3>
@@ -23,13 +23,14 @@ const Introduction =() =>{
           тільки інституцією, яка навчає, а й яка навчається.
         </p>
 
-        <div className={styles.imgWrapper}>
-          <img src={decan} width="333" height="411" alt="man"/>
-          <div className={styles.nameWrapper}>
+        <div className={styles.wrapper}>
+         <div className={styles.imgWrapper}>
+          <img src={decan}  alt="man"/>
+         </div>
+         <div className={styles.nameWrapper}>
             <span className={styles.name}>о. д-р Богдан Прах</span><br/>
             <span>ректор УКУ</span>
           </div>
-          
         </div>
       </div>
       </Container>

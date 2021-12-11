@@ -1,0 +1,38 @@
+.partners {
+  padding-top: 200px;
+  padding-bottom: 200px;
+  width: 100%;
+  height: fit-content;
+  background-image: url("../../imgs/partners/firework1.png"),
+    url("../../imgs/partners/ellipse1.png"),
+    url("../../imgs/partners/ellipse2.png"),
+    url("../../imgs/partners/firework2.png"),
+    url("../../imgs/partners/ellipse3.png");
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-position: top -120px right 0px, top 233px right 633px,
+    bottom 351px right 64px, left bottom -250px, left 68px bottom 115px;
+}
+
+.headingWrapper {
+  display: flex;
+  width: 715px;
+  padding: 35px 55px 35px 240px;
+  border-top-right-radius: 95px;
+  border-bottom-right-radius: 95px;
+  background-color: rgb(102, 45, 145);
+  color: white;
+  font-size: 22px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+}
+
+.strategyPartWrapper {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.strategyPartItem:not(:first-child) {
+  margin-left: 20px;
+}
