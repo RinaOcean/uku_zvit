@@ -6,12 +6,12 @@ const Introduction =() =>{
   return(
     <section className={styles.introduction}>
       <div className={styles.headingWrapper}>
-        <h2>слово декана</h2>
+        <span>слово декана</span>
       </div>
       <Container>
       <div className={styles.textWrapper}>
         <p className={styles.introductionText}>
-          <h3>Слава Ісусу Христу!<br/>
+        <h3>Слава Ісусу Христу!<br/>
           Дорогі у Христі брати і сестри!</h3>
           Сказати, що минулий навчльний рік був особливим, 
           це майже нічого не сказати. Ми усі відчули на собі, як на ходу доводиться змінювати 
@@ -24,10 +24,10 @@ const Introduction =() =>{
         </p>
 
         <div className={styles.wrapper}>
-         <div className={styles.imgWrapper}>
-          <img src={decan}  alt="man"/>
-         </div>
-         <div className={styles.nameWrapper}>
+          <div className={styles.imgWrapper}>
+            <img src={decan}  alt="man"/>
+          </div>
+          <div className={styles.nameWrapper}>
             <span className={styles.name}>о. д-р Богдан Прах</span><br/>
             <span>ректор УКУ</span>
           </div>
