@@ -21,7 +21,7 @@
   border-bottom-right-radius: 95px;
   background-color: rgb(102, 45, 145);
   color: white;
-  font-size: calc(4px + 2vmin);
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -32,18 +32,13 @@
   margin-bottom: 25px;
 }
 
-/* .strategyPartWrapper img {
-  width: 100%;
-} */
 .partners img {
   width: 100%;
 }
-/* .strategyPartItem:not(:first-child) {
-  margin-left: 5px;
-} */
 
 @media (min-width: 480px) and (max-width: 767px) {
   .headingWrapper {
+    font-size: 14px;
     padding-left: 40px;
   }
   .strategyPartners {
@@ -69,8 +64,9 @@
 
   .headingWrapper {
     width: 55%;
-    padding: 30px;
+    padding: 20px;
     padding-left: 90px;
+    font-size: 16px;
   }
 
   .strategyPartners {
@@ -97,12 +93,22 @@
 
   .headingWrapper {
     width: 55%;
-    padding: 35px;
-    padding-left: 240px;
+    padding: 25px;
+    padding-left: 120px;
+    font-size: 18px;
   }
 
   .strategyPartners {
     margin-top: 100px;
     margin-bottom: 80px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .headingWrapper {
+    width: 55%;
+    padding: 35px;
+    padding-left: 240px;
+    font-size: 20px;
   }
 }
