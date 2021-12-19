@@ -21,7 +21,7 @@
   border-bottom-right-radius: 95px;
   background-color: rgb(102, 45, 145);
   color: white;
-  font-size: calc(4px + 2vmin);
+  font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.25em;
@@ -36,7 +36,7 @@
 
 .introductionText {
   text-align: left;
-  font-size: calc(10px + 2vmin);
+  font-size: 14px;
 
   margin: 0;
 }
@@ -67,11 +67,12 @@
 }
 
 .imgWrapper img {
+  aspect-ratio: 1/1;
   object-fit: cover;
 }
 
 .nameWrapper {
-  font-size: calc(6px + 2vmin);
+  font-size: 12px;
   padding-top: 10px;
 }
 
@@ -81,6 +82,7 @@
 
 @media (min-width: 480px) and (max-width: 767px) {
   .headingWrapper {
+    font-size: 14px;
     padding-left: 40px;
   }
 
@@ -113,8 +115,9 @@
 
   .headingWrapper {
     width: 55%;
-    padding: 30px;
+    padding: 20px;
     padding-left: 90px;
+    font-size: 16px;
   }
 
   .textWrapper {
@@ -126,11 +129,12 @@
   .introductionText {
     width: 60%;
     margin-right: 20px;
-    /* font-size: 16px; */
+    font-size: 16px;
   }
 
   .wrapper {
     width: 40%;
+    height: fit-content;
     padding-right: 0px;
     text-align: right;
     background-image: url("../../imgs/tablet/introduction/circle.png");
@@ -141,9 +145,57 @@
     padding-bottom: 20px;
     margin-bottom: -20px;
   }
+
+  .nameWrapper {
+    font-size: 13px;
+  }
 }
 
 @media (min-width: 1200px) {
+  .introduction {
+    padding-top: 130px;
+    padding-bottom: 130px;
+    /* background-image: url("../../imgs/desktop/introduction/dots.png"),
+      url("../../imgs/desktop/introduction/rectangle01.png"),
+      url("../../imgs/desktop/introduction/rectangle03.png"),
+      url("../../imgs/desktop/introduction/rectangle02.png");
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-position: top 10px right 40px, top -40px right,
+      left -20px bottom -35px, left -20px bottom -200px; */
+  }
+
+  .headingWrapper {
+    padding: 25px;
+    padding-left: 120px;
+    font-size: 18px;
+  }
+
+  .textWrapper {
+    flex-direction: row;
+    margin-top: 60px;
+  }
+
+  .introductionText {
+    /* width: 70%; */
+    margin-right: 50px;
+    font-size: 18px;
+  }
+
+  .wrapper {
+    /* width: 30%; */
+
+    /* text-align: right; */
+    /* background-image: url("../../imgs/desktop/introduction/circle.png"); */
+    background-repeat: no-repeat;
+    background-position: right 0px bottom 0px;
+    padding-right: 80px;
+    margin-right: -80px;
+    padding-bottom: 40px;
+    margin-bottom: -40px;
+  }
+}
+
+@media (min-width: 1400px) {
   .introduction {
     padding-top: 220px;
     padding-bottom: 220px;
@@ -160,6 +212,7 @@
     width: 55%;
     padding: 35px;
     padding-left: 240px;
+    font-size: 20px;
   }
 
   .textWrapper {
@@ -168,30 +221,18 @@
   }
 
   .introductionText {
-    width: 70%;
+    /* width: 70%; */
     margin-right: 50px;
+    font-size: 18px;
   }
 
   .wrapper {
-    width: 30%;
-    padding-right: 0px;
-    text-align: right;
-    background-image: url("../../imgs/desktop/introduction/circle.png");
-    background-repeat: no-repeat;
-    background-position: right 0px bottom 0px;
-    padding-right: 80px;
-    margin-right: -80px;
-    padding-bottom: 40px;
-    margin-bottom: -40px;
   }
 
   .imgWrapper {
     height: fit-content;
   }
-}
-
-@media (min-width: 1400px) {
   .wrapper {
-    width: 680px;
+    width: 370px;
   }
 }

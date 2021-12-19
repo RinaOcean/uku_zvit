@@ -23,6 +23,13 @@
 
 @media (min-width: 1200px) {
   .Container {
+    padding-left: 120px;
+    padding-right: 120px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .Container {
     padding-left: 240px;
     padding-right: 240px;
   }
