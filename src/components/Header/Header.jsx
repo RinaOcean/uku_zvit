@@ -1,6 +1,6 @@
 import styles from './Header.module.css';
-import facultyLogoSvg from '../../imgs/faculty_logo.svg';
-import facultyLogoPng from '../../imgs/faculty_logo.png';
+import facultyLogoSvg from '../../imgs/uku_applied_sciences _faculty_logo.svg';
+
 
 const Header = ()=>{
   return (
