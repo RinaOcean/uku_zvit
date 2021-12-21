@@ -9,7 +9,7 @@ const Chapters =()=>{
       <Container>
       <nav className={styles.itemsWrapper}>
           <Link className={styles.item} to='/introductory-campaign-results'>Результати вступної кампанії</Link>
-          <Link className={styles.item} to='/strategy-purposes'>Стратегічні цілі факультету 2025</Link>
+          <Link className={styles.item} to='/strategy-goals'>Стратегічні цілі факультету 2025</Link>
           <Link className={styles.item} to='/structure-changes'>Структурні зміни</Link>
           <Link className={styles.item} to='/students-wins'>Стдентські перемоги</Link>
           <Link className={styles.item} to='/proffesors-wins'>Успіхи викладачів</Link>
