@@ -9,6 +9,7 @@ import Footer from './components/Footer';
 import './App.css';
 import MainPage from './pages/MainPage';
 import StrategyPage from './pages/StrategyPage/StrategyPage';
+import ScrollUpBtn from './components/ScrollUpBtn/ScrollUpBtn';
 
 
 const  App = () => (
@@ -23,6 +24,7 @@ const  App = () => (
      <Partners/>
      <Footer/> */}
     </Routes>
+    <ScrollUpBtn/>
     </div>
 );    
  

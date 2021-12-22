@@ -11,15 +11,18 @@
 .socialWrapper img {
   width: 30px;
   height: 30px;
+  transition: 0.5s;
 }
 
 .socialWrapper a:not(:first-child) {
   margin-left: 15px;
 }
 
-.socialWrapper img:hover {
-  transform: scale(1.1);
+.socialWrapper img:hover,
+.socialWrapper img:focus {
   cursor: pointer;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
 
 .link {
@@ -29,12 +32,12 @@
 @media (min-width: 1400px) {
   .footer {
     background-color: #9d9fa2;
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
   .socialWrapper img {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
   }
   .socialWrapper a:not(:first-child) {
     margin-left: 20px;

@@ -20,7 +20,14 @@ z-index: 100;
 
 .logo{
   margin-right: auto;
-  
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.logo:hover,
+.logo:focus {
+  transform: scale(1.09);
+  transition: 0.5s;
 }
 
 .nameGroup{
@@ -49,12 +56,14 @@ z-index: 100;
   background-color: transparent;
   cursor: pointer;
   padding: 0;
+  transition: 0.5s;
 }
 
-/* .button img{
-  width: 30px;
-  height: 30px;
-} */
+.button:hover,
+.button:focus{
+  transform: scale(1.1);
+  transition: 0.5s;
+}
 
 
 @media (min-width: 480px) and (max-width: 767px) {

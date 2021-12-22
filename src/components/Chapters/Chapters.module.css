@@ -30,6 +30,7 @@
   color: #ffffff;
   text-align: center;
 text-decoration: none;
+transition: 0.5s;
   /* aspect-ratio: 1/1; */
 }
 
@@ -38,6 +39,8 @@ text-decoration: none;
 transform: scale(1.05);
 cursor: pointer;
 background-color: rgb(102, 45, 145);
+
+  transition: 0.5s;
 }
 
 @media (min-width: 320px) {

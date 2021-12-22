@@ -135,8 +135,8 @@
 
 @media (min-width: 768px) and (max-width: 1199px){
   .strategy{
-    padding-top: 120px;
-    padding-bottom: 50px;
+    padding-top: 170px;
+    padding-bottom: 100px;
   }
 
   .headingWrapper{
@@ -181,8 +181,8 @@
 
 @media (min-width:1200px) {
   .strategy{
-    padding-top: 180px;
-    padding-bottom: 80px;
+    padding-top: 200px;
+    padding-bottom: 120px;
   }
 
   .headingWrapper{
@@ -223,7 +223,7 @@
   }
 
   .item:not(:first-child){
-    margin-left: 50px;
+    margin-left: 30px;
   }
 
   .item::before {
@@ -237,7 +237,25 @@
   }
   
   .text{
-    font-size: 18px;
+    font-size: 16px;
     width: 100%;
   }
+}
+
+@media (min-width:1400px) {
+  /* .strategy{
+    padding-top: 200px;
+    padding-bottom: 100px;
+  } */
+    
+  .listIcon{
+    height:70px;
+    width: auto;
+   margin-bottom: 45px; 
+  }
+  
+  .item{
+  width: 16%;
+  }
+  
 }
