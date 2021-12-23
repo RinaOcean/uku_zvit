@@ -11,6 +11,7 @@ import MainPage from './pages/MainPage';
 import StrategyPage from './pages/StrategyPage/StrategyPage';
 import ScrollUpBtn from './components/ScrollUpBtn/ScrollUpBtn';
 import IntroCampaignResPage from './pages/IntroCampaignResPage/IntroCampaignResPage';
+import StructureChangesPage from './pages/StructureChangesPage/StructureChangesPage';
 
 
 const  App = () => (
@@ -20,6 +21,7 @@ const  App = () => (
             <Route path="/" element={<MainPage/>}/>
             <Route path="/strategy-goals" element={<StrategyPage/>}/>
             <Route path="/introductory-campaign-results" element={<IntroCampaignResPage/>}/>
+            <Route path="/structure-changes" element={<StructureChangesPage/>}/>
      
     </Routes>
     <ScrollUpBtn/>
