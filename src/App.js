@@ -10,6 +10,7 @@ import './App.css';
 import MainPage from './pages/MainPage';
 import StrategyPage from './pages/StrategyPage/StrategyPage';
 import ScrollUpBtn from './components/ScrollUpBtn/ScrollUpBtn';
+import IntroCampaignResPage from './pages/IntroCampaignResPage/IntroCampaignResPage';
 
 
 const  App = () => (
@@ -18,11 +19,8 @@ const  App = () => (
     <Routes >
             <Route path="/" element={<MainPage/>}/>
             <Route path="/strategy-goals" element={<StrategyPage/>}/>
-     {/* <Header/>
-     <Introduction/>
-     <Chapters/>
-     <Partners/>
-     <Footer/> */}
+            <Route path="/introductory-campaign-results" element={<IntroCampaignResPage/>}/>
+     
     </Routes>
     <ScrollUpBtn/>
     </div>
