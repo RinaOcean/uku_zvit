@@ -5,13 +5,13 @@ import { useEffect, useState } from "react";
 const ScrollUpBtn = () => {
   
      const hasWindow = typeof window !== 'undefined'
-  const [opacity, setOpacity] = useState(1)
+  const [opacity, setOpacity] = useState(0)
   
   function handleElementsOnScroll() {
       window.onscroll = () => {
         let currentScrollPos = window.pageYOffset
   
-        if (currentScrollPos > 600) {
+        if (currentScrollPos > 700) {
           setOpacity(1)
         } else {
           setOpacity(0)
