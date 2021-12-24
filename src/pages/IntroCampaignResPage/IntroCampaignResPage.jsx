@@ -27,7 +27,7 @@ const IntroCampaignResPage = () => (
 </picture></div>
   </section>
   </Container>
-  <Footer/>
+  
   </>
 )
 

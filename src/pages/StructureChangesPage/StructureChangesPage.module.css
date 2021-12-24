@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   padding-top: 80px;
   padding-bottom: 30px;
   font-size: 14px;
@@ -32,13 +32,35 @@
   }
 
   .imgWrapper{
-    max-width: 920px;
+    max-width: 600px;
   }
 }
 @media (min-width:1200px)  {
   .section{
+    
     padding-top: 180px;
     padding-bottom: 120px;
     font-size: 18px;
+   
+  }
+  /* .imgWrapper{
+    width: 40%;
+  }
+  .text{
+    width: 60%;
+  } */
+}
+
+@media (min-width:1600px)  {
+  .section{
+    flex-direction: row;
+    
+   
+  }
+  .imgWrapper{
+    width: 40%;
+  }
+  .text{
+    width: 60%;
   }
 }

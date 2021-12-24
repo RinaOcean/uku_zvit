@@ -13,20 +13,22 @@ import ScrollUpBtn from './components/ScrollUpBtn/ScrollUpBtn';
 import IntroCampaignResPage from './pages/IntroCampaignResPage/IntroCampaignResPage';
 import StructureChangesPage from './pages/StructureChangesPage/StructureChangesPage';
 import StudentsWinsPage from './pages/StudentWinsPage/StudentsWinsPage';
+import ProfessorsWinsPage from './pages/ProfessorsWinsPage/ProfessorsWinsPage';
 
 
 const  App = () => (
   <div className='App'>
   
     <Routes >
-            <Route path="/" element={<MainPage/>}/>
-            <Route path="/strategy-goals" element={<StrategyPage/>}/>
-            <Route path="/introductory-campaign-results" element={<IntroCampaignResPage/>}/>
-            <Route path="/structure-changes" element={<StructureChangesPage/>}/>
-            <Route path="/students-wins" element={<StudentsWinsPage/>}/>
-     
+      <Route path="/" element={<MainPage/>}/>
+      <Route path="/strategy-goals" element={<StrategyPage/>}/>
+      <Route path="/introductory-campaign-results" element={<IntroCampaignResPage/>}/>
+      <Route path="/structure-changes" element={<StructureChangesPage/>}/>
+      <Route path="/students-wins" element={<StudentsWinsPage/>}/>
+      <Route path="/professors-wins" element={<ProfessorsWinsPage/>}/>
     </Routes>
     <ScrollUpBtn/>
+    <Footer/>
     </div>
 );    
  

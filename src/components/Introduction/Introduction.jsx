@@ -28,8 +28,8 @@ const Introduction =() =>{
             <img src={decan}  alt="man"/>
           </div>
           <div className={styles.nameWrapper}>
-            <span className={styles.name}>о. д-р Богдан Прах</span><br/>
-            <span>ректор УКУ</span>
+            <span className={styles.name}>Ярослав Притула</span><br/>
+            <span>декан факультету прикладних наук УКУ</span>
           </div>
         </div>
       </div>

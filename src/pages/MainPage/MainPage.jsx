@@ -10,7 +10,7 @@ const MainPage = () => (
   <Introduction/>
   <Chapters/>
   <Partners/>
-  <Footer/>
+  
 </>
 );
 

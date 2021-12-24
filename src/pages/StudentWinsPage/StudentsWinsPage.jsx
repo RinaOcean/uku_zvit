@@ -1,6 +1,6 @@
 import AppBar from '../../components/AppBar/AppBar';
 import Container from '../../components/Container';
-import Footer from '../../components/Footer';
+
 
 import img1 from '../../imgs/studWins/stud-wins-01.jpg';
 import img2 from '../../imgs/studWins/stud-wins-02.jpg';
@@ -159,7 +159,7 @@ const StudentsWinsPage = () => (
 
       </section>
 </Container>
-  <Footer/>
+  
  </>
 )
 

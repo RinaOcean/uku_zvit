@@ -58,7 +58,7 @@ const StrategyPage = () =>(
       
       </section>
     </Container>
-    <Footer/>
+    
   </>
 );
 

@@ -1,8 +1,8 @@
 .strategy{
   display: flex;
-  justify-content: center;
   flex-direction: column;
-  align-items: center;
+  justify-content: center;
+  
   padding-top: 100px;
   padding-bottom: 30px;
 }
