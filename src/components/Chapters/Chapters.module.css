@@ -29,17 +29,17 @@
   background-color: rgba(102, 45, 145, 0.8);
   color: #ffffff;
   text-align: center;
-text-decoration: none;
-transition: 0.5s;
+  text-decoration: none;
+  transition: 0.5s;
   /* aspect-ratio: 1/1; */
 }
 
 .item:hover,
 .item:focus{
-transform: scale(1.05);
-cursor: pointer;
-background-color: rgb(102, 45, 145);
-
+  transform: scale(1.05);
+  cursor: pointer;
+  background-color: rgb(102, 45, 145);
+  color: #ffffff;
   transition: 0.5s;
 }
 
