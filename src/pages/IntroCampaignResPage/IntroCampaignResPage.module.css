@@ -25,6 +25,7 @@
     max-width: 920px;
   }
 }
+
 @media (min-width:1200px)  {
   .section{
     padding-top: 180px;

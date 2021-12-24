@@ -12,6 +12,7 @@ import StrategyPage from './pages/StrategyPage/StrategyPage';
 import ScrollUpBtn from './components/ScrollUpBtn/ScrollUpBtn';
 import IntroCampaignResPage from './pages/IntroCampaignResPage/IntroCampaignResPage';
 import StructureChangesPage from './pages/StructureChangesPage/StructureChangesPage';
+import StudentsWinsPage from './pages/StudentWinsPage/StudentsWinsPage';
 
 
 const  App = () => (
@@ -22,6 +23,7 @@ const  App = () => (
             <Route path="/strategy-goals" element={<StrategyPage/>}/>
             <Route path="/introductory-campaign-results" element={<IntroCampaignResPage/>}/>
             <Route path="/structure-changes" element={<StructureChangesPage/>}/>
+            <Route path="/students-wins" element={<StudentsWinsPage/>}/>
      
     </Routes>
     <ScrollUpBtn/>

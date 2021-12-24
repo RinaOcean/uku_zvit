@@ -11,7 +11,7 @@ const ScrollUpBtn = () => {
       window.onscroll = () => {
         let currentScrollPos = window.pageYOffset
   
-        if (currentScrollPos > 700) {
+        if (currentScrollPos > 600) {
           setOpacity(1)
         } else {
           setOpacity(0)
