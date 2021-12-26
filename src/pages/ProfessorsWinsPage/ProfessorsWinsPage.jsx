@@ -20,6 +20,7 @@ const ProfessorsWinsPage = () => (
    <section className={styles.section}>
      <div className={styles.imgWrapper}>
        <img src={img1} alt="girl"/>
+       
        <p className={styles.description}>
          Протягом осіннього семестру 2021-2022 н.р керівниця бакалаврської програми 
          “ІТ та бізнес-аналітика” Юлія Клебан перебуває на дослідницькому стажуванні

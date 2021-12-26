@@ -3,6 +3,14 @@
   padding-bottom: 30px;
 }
 
+.imgWrapper img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+
 @media (min-width:480px) and (max-width: 767px) {
   .section{
     padding-top: 120px;
@@ -28,6 +36,9 @@
 
 @media (min-width:1200px)  {
   .section{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 5px;
     padding-top: 180px;
     padding-bottom: 120px;
   }

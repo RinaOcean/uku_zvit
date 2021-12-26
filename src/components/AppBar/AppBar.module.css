@@ -29,6 +29,9 @@
 
 .item{
   text-decoration: none;
+  color:rgb(88, 89, 91);
+}
+.itemActive{
   color:rgb(102, 45, 145);
 }
 

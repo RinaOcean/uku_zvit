@@ -1,3 +1,4 @@
+import { useState } from 'react';
 import AppBar from '../../components/AppBar/AppBar';
 import Container from '../../components/Container';
 
@@ -7,20 +8,30 @@ import img3 from '../../imgs/socialProjects/project-03.jpg';
 import img4 from '../../imgs/socialProjects/project-04.jpg';
 import img5 from '../../imgs/socialProjects/project-05.jpg';
 import img6 from '../../imgs/socialProjects/project-06.jpg';
+import arrowSvg from '../../imgs/socialProjects/down-arrow-svgrepo.svg';
 
 import styles from './SocialProjectsPage.module.css'
 
 
 
-const SocialProjectsPage = () => (
+const SocialProjectsPage = () => {
+  const [open1, setOpen1]= useState(false);
+  const [open2, setOpen2]= useState(false);
+  const [open3, setOpen3]= useState(false);
+  const [open4, setOpen4]= useState(false);
+  const [open5, setOpen5]= useState(false);
+  const [open6, setOpen6]= useState(false);
+
+  return(
   <>
    <AppBar name="Суспільно-орієнтовані проекти"/>
    <Container>
-   <section className={styles.section}>
-     
-     <div className={styles.imgWrapper}>
+     <section className={styles.section}>
+        <div className={styles.imgWrapper}>
        <img src={img1} alt="man talking"/>
-       <p className={styles.description}>
+       
+      {open1? 
+      <p className={styles.description}>
          Розвиток сфери штучного інтелекту вже зовсім скоро може стати 
        одним із пріоритетів розвитку міста Львова. У червні 2021 р. 
        Комісія підприємництва, інвестицій, цифрової трансформації та 
@@ -47,15 +58,27 @@ const SocialProjectsPage = () => (
 
         На рівні міської інфраструктури штучний інтелект може застосовуватися 
        для аналізу транспортних потоків, завантаженості доріг та парковок, в 
-       електронному самоврядуванні, для підвищення безпеки в місті тощо.
-
-       </p>
+       електронному самоврядуванні, для підвищення безпеки в місті тощо.&nbsp;
        <a className={styles.link} href="https://lviv.goloszmin.org/news/lviv-mozhe-stati-tsentrom-shtuchnogo-intelektu-skhidnoi-evropi-oleksa-voznyak?fbclid=IwAR0ZlYmKPHVn5OkWXyKuB3NPkJBNnQZA9npcDns7-N-bRz8aB2n84RJqDWc">Детальніше</a>
+       </p> : null
+       }
+
+       <button className={styles.expandBtn}  type="button" onClick={()=>{setOpen1(!open1)}}>
+       {open1? 
+       <span class="material-icons">
+         keyboard_double_arrow_up
+       </span> :
+       <span class="material-icons">
+         keyboard_double_arrow_down
+       </span>
+       }
+       </button>
+       
      </div>
- 
-     <div className={styles.imgWrapper}>
+        <div className={styles.imgWrapper}>
        <img src={img2} alt="classroom"/>
-       <p className={styles.description}>
+             
+       {open2? <p className={styles.description}>
          Уже четвертий рік поспіль студенти факультету прикладних наук УКУ 
          самостійно організовують “APPS Summer Camp” – літню школу, яка має 
          на меті дати орієнтири для молодих людей у сфері комп’ютерних наук,
@@ -72,15 +95,27 @@ const SocialProjectsPage = () => (
          Фінальним акордом у програмі літньої школи  є презентація власного 
          дослідницького проекту, який реалізовується протягом навчання на таборі. 
          Для того, щоб учасники почувалися більш впевнено під час своїх презентацій, 
-         організатори також проводять воркшопи з мистецтва публічних виступів. 
+         організатори також проводять воркшопи з мистецтва публічних виступів.&nbsp; 
 
- 
-       </p>
-       <a className={styles.link}  href="https://ucu.edu.ua/news/buty-masshtabnymy-ta-samozaradnymy-pro-dosvid-provedennya-taboru-dlya-starshoklasnykiv-apps-summer-camp/">Детальніше</a>
+       <a className={styles.link} href="https://lviv.goloszmin.org/news/lviv-mozhe-stati-tsentrom-shtuchnogo-intelektu-skhidnoi-evropi-oleksa-voznyak?fbclid=IwAR0ZlYmKPHVn5OkWXyKuB3NPkJBNnQZA9npcDns7-N-bRz8aB2n84RJqDWc">Детальніше</a>
+       </p> : null
+       }
+
+       <button className={styles.expandBtn}  type="button" onClick={()=>{setOpen2(!open2)}}>
+       {open2? 
+       <span class="material-icons">
+         keyboard_double_arrow_up
+       </span> :
+       <span class="material-icons">
+         keyboard_double_arrow_down
+       </span>
+       }
+       </button>
+                     
      </div>
-
-     <div className={styles.imgWrapper}>
+        <div className={styles.imgWrapper}>
        <img src={img3} alt="girl"/>
+       {open3? 
        <p className={styles.description}>
          Команда Студентського братства УКУ вже 9 рік поспіль ініціює проєкт 
          «Великдень разом». Цьогоріч захід відбувся у Херсоні з 30 квітня по 
@@ -94,13 +129,26 @@ const SocialProjectsPage = () => (
          часу з місцевою громадою, руйнування стереотипів та упереджень один 
          до одного, а об’єднує усіх найбільше християнське свято – Христове 
          Воскресіння». Головною організаторкою цьогорічної ініціативи була 
-         студентка факультету прикладних наук Софія Гаркот.
-        </p>
-       <a className={styles.link}  href="https://ucu.edu.ua/news/velykden-razom-u-hersoni-vid-studentskogo-bratstva-uku/?fbclid=IwAR14ZzVFkW8AmFLknVLlPdhOhUbH_Ft4x7oYbXC84S1LsPMh4yrWx-pck58">Детальніше</a>
-     </div>
+         студентка факультету прикладних наук Софія Гаркот.&nbsp;
+         <a className={styles.link}  href="https://ucu.edu.ua/news/velykden-razom-u-hersoni-vid-studentskogo-bratstva-uku/?fbclid=IwAR14ZzVFkW8AmFLknVLlPdhOhUbH_Ft4x7oYbXC84S1LsPMh4yrWx-pck58">Детальніше</a>
+        </p>: null
+       }
 
-     <div className={styles.imgWrapper}>
+        <button className={styles.expandBtn}  type="button" onClick={()=>{setOpen3(!open3)}}>
+        {open3? 
+        <span class="material-icons">
+          keyboard_double_arrow_up
+        </span> :
+        <span class="material-icons">
+          keyboard_double_arrow_down
+        </span>
+        }
+        </button>
+       
+      </div>
+        <div className={styles.imgWrapper}>
        <img src={img4} alt="graphic"/>
+       {open4?
        <p className={styles.description}>
          З початку 2020 року Факультет прикладних наук УКУ почав досліджувати 
          ринок вакансій в Україні на позиції, які пов’язані з Data Science. 
@@ -110,13 +158,26 @@ const SocialProjectsPage = () => (
          проводимо динамічне дослідження-аналіз вакансій на сайтах dou.ua 
          та djinni.co. Також ми вирішили оцінити відношення кількості вакансій 
          у сфері Data Science до загальної кількості вакансій в IT.
-         З детальними результатами досілдження можна ознайомитися за покликанням. 
-        </p>
-       <a className={styles.link}  href="https://apps.ucu.edu.ua/articles-and-research/data-science-job-market-2021-1/">Детальніше</a>
-     </div>
+         З детальними результатами досілдження можна ознайомитися за&nbsp;
+         <a className={styles.link}  href="https://apps.ucu.edu.ua/articles-and-research/data-science-job-market-2021-1/">покликанням</a>. 
+        </p>: null
+       }
 
-     <div className={styles.imgWrapper}>
+        <button className={styles.expandBtn}  type="button" onClick={()=>{setOpen4(!open4)}}>
+        {open4? 
+        <span class="material-icons">
+          keyboard_double_arrow_up
+        </span> :
+        <span class="material-icons">
+          keyboard_double_arrow_down
+        </span>
+        }
+        </button>
+       
+     </div>
+        <div className={styles.imgWrapper}>
        <img src={img5} alt="graphic"/>
+       {open5?
        <p className={styles.description}>
          У кінці 2020 р. Дмитро Лопушанський, студент факультету прикладних наук 
          УКУ отримав патент на мультифункціональний пристрій для незрячих людей. 
@@ -131,15 +192,27 @@ const SocialProjectsPage = () => (
          на ICYS (Міжнародна конференція молодих вчених) у Куала-Лумпурі в Малайзії, 
          на OKSEF (Виставка-конкурс у сфері технічних наук та енергетики) в м. Ізмір, 
          Туреччина та на AIGC (Глобальний конкурс інновацій) у Сінгапурі.
-         Ознайомитися з публічною частиною патенту можна на сайті Укрпатенту за 
-         <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fsis.ukrpatent.org%2Fuk%2Fsearch%2Fdetail%2F1465328%2F%3Ffbclid%3DIwAR0P9ZnO5DJhWstDRQ-GWIgHxYRaM8EWQ76w1Vs9CnJMzSHgLzefoBVQoQQ&h=AT3p5clRB0Z5swMRlJg9p1R5JL9z8eeInn2QhZ9RN99SPgj422ZEcgZ6BzU4QT_CZa3fkZFnVcph0AeIdBWeKxVekCcUW_nSeSHzwtXPVv93xwAz8hNJ2dz81d9ok1YyMpl2&__tn__=-UK-R&c%5B0%5D=AT0oE0IcNz7JemGrHlmGT4g1OJ7Ot6jz9YxErBcWe62odztO-SuYPrf-xe20_a2YuxLklvoQU9va-kJsuZnS7423vHWKs-1lWh5Snh4vRuicLXhzreaBn7m3YhbSmPcOthnaGi4rw2Ktd_gp1BTVhS2BQj3EeZ7qNTqNtGhqp7WjLRKOJ70OeI21gPfy7U2Ww-bykbHM"> посиланням</a>.
+         Ознайомитися з публічною частиною патенту можна на сайті Укрпатенту за&nbsp; 
+         <a href="https://l.facebook.com/l.php?u=https%3A%2F%2Fsis.ukrpatent.org%2Fuk%2Fsearch%2Fdetail%2F1465328%2F%3Ffbclid%3DIwAR0P9ZnO5DJhWstDRQ-GWIgHxYRaM8EWQ76w1Vs9CnJMzSHgLzefoBVQoQQ&h=AT3p5clRB0Z5swMRlJg9p1R5JL9z8eeInn2QhZ9RN99SPgj422ZEcgZ6BzU4QT_CZa3fkZFnVcph0AeIdBWeKxVekCcUW_nSeSHzwtXPVv93xwAz8hNJ2dz81d9ok1YyMpl2&__tn__=-UK-R&c%5B0%5D=AT0oE0IcNz7JemGrHlmGT4g1OJ7Ot6jz9YxErBcWe62odztO-SuYPrf-xe20_a2YuxLklvoQU9va-kJsuZnS7423vHWKs-1lWh5Snh4vRuicLXhzreaBn7m3YhbSmPcOthnaGi4rw2Ktd_gp1BTVhS2BQj3EeZ7qNTqNtGhqp7WjLRKOJ70OeI21gPfy7U2Ww-bykbHM">покликанням</a>.&nbsp;
          
-        </p>
-       <a className={styles.link}  href="https://l.facebook.com/l.php?u=https%3A%2F%2Fucu.edu.ua%2Fnews%2Fstudent-pershokursnyk-uku-rozrobyv-prylad-dlya-nezryachyh%2F%3Ffbclid%3DIwAR0P9ZnO5DJhWstDRQ-GWIgHxYRaM8EWQ76w1Vs9CnJMzSHgLzefoBVQoQQ&h=AT1JfSoyz8gxb9yLeLEsbetTMd56UqrDtggr0FVOPW8hd_4aTMv3bp3bL34w_l7xmVAcEf9e54tl8H0ePLrEiH2wZPUAcn_x7Dvpbz9KIZTZT9-ZNPIcdcANE6vJnefk7COb&__tn__=-UK-R&c%5B0%5D=AT0oE0IcNz7JemGrHlmGT4g1OJ7Ot6jz9YxErBcWe62odztO-SuYPrf-xe20_a2YuxLklvoQU9va-kJsuZnS7423vHWKs-1lWh5Snh4vRuicLXhzreaBn7m3YhbSmPcOthnaGi4rw2Ktd_gp1BTVhS2BQj3EeZ7qNTqNtGhqp7WjLRKOJ70OeI21gPfy7U2Ww-bykbHM">Детальніше</a>
-     </div>
+        <a className={styles.link}  href="https://l.facebook.com/l.php?u=https%3A%2F%2Fucu.edu.ua%2Fnews%2Fstudent-pershokursnyk-uku-rozrobyv-prylad-dlya-nezryachyh%2F%3Ffbclid%3DIwAR0P9ZnO5DJhWstDRQ-GWIgHxYRaM8EWQ76w1Vs9CnJMzSHgLzefoBVQoQQ&h=AT1JfSoyz8gxb9yLeLEsbetTMd56UqrDtggr0FVOPW8hd_4aTMv3bp3bL34w_l7xmVAcEf9e54tl8H0ePLrEiH2wZPUAcn_x7Dvpbz9KIZTZT9-ZNPIcdcANE6vJnefk7COb&__tn__=-UK-R&c%5B0%5D=AT0oE0IcNz7JemGrHlmGT4g1OJ7Ot6jz9YxErBcWe62odztO-SuYPrf-xe20_a2YuxLklvoQU9va-kJsuZnS7423vHWKs-1lWh5Snh4vRuicLXhzreaBn7m3YhbSmPcOthnaGi4rw2Ktd_gp1BTVhS2BQj3EeZ7qNTqNtGhqp7WjLRKOJ70OeI21gPfy7U2Ww-bykbHM">Детальніше</a>
+        </p>: null
+       }
 
-     <div className={styles.imgWrapper}>
+        <button className={styles.expandBtn}  type="button" onClick={()=>{setOpen5(!open5)}}>
+        {open5? 
+        <span class="material-icons">
+          keyboard_double_arrow_up
+        </span> :
+        <span class="material-icons">
+          keyboard_double_arrow_down
+        </span>
+        }
+        </button>
+     </div>
+        <div className={styles.imgWrapper}>
        <img src={img6} alt="student"/>
+       {open6?
        <p className={styles.description}>
          Уже другий рік поспіль факультет прикладних наук УКУ разом з 
          великим українським бізнесом проводить Business Tech Challenge.
@@ -157,18 +230,26 @@ const SocialProjectsPage = () => (
          Модель Business Tech Challenge є виграшною для кожної із сторін, 
          адже успішний бізнес пропонує свою проблему на вирішення учасникам, 
          найкращі рішення яких мають можливість бути реалізованими в реальному житті.
+        </p>: null
+       }
 
-         
-        </p>
+       <button className={styles.expandBtn}  type="button" onClick={()=>{setOpen6(!open6)}}>
+        {open6? 
+        <span class="material-icons">
+          keyboard_double_arrow_up
+        </span> :
+        <span class="material-icons">
+          keyboard_double_arrow_down
+        </span>
+        }
+        </button>
        
      </div>
- 
- 
- 
-       </section>
- </Container>
+      </section>
+    </Container>
    
   </>
  )
+}
  
  export default SocialProjectsPage;

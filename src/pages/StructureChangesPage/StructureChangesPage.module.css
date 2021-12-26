@@ -13,6 +13,14 @@
    max-width: 403px;
 }
 
+.imgWrapper img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+  
+}
+
+
 @media (min-width:480px) and (max-width: 767px) {
   .section{
     padding-top: 120px;

@@ -54,3 +54,14 @@ ul {
   margin: 0;
   padding: 0;
 }
+
+h1,
+h2,
+h3,
+span,
+p {
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
