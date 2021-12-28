@@ -11,15 +11,15 @@ const Footer = ()=>{
     <footer className={styles.footer}>
       <Container>
       <nav className={styles.socialWrapper}>
-        <a className={styles.link} href="">
+        <a className={styles.link} href="https://www.instagram.com/ucu_apps/">
           <img src={instLogo}  alt="logo" />
         </a>
 
-        <a href="">
+        <a className={styles.link} href="https://www.youtube.com/channel/UCAXm37jEuwO_HicFxSs7b0g">
           <img src={yotubeLogo}  alt="logo" />
         </a>
 
-        <a href="">
+        <a className={styles.link} href="https://www.facebook.com/csatucu">
          <img src={fbLogo}  alt="logo" />
         </a>
       </nav>

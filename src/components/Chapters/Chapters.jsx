@@ -17,9 +17,9 @@ const Chapters =()=>{
           <Link onClick={scrollToTop} className={styles.item} to='/professors-wins'>Успіхи викладачів</Link>
           <Link onClick={scrollToTop} className={styles.item} to='/social-projects'>Суспільно-орієнтовані проекти</Link>
           <Link onClick={scrollToTop} className={styles.item} to='/certificate-programs'>Сертифікаційні програми</Link>
-          <Link onClick={scrollToTop} className={styles.item} to='/events'>Події на факультеті</Link>
+          <Link onClick={scrollToTop} className={styles.item} to='/graduates'>Випускники</Link>
           <Link onClick={scrollToTop} className={styles.item} to='/science'>Наука</Link>
-          <Link onClick={scrollToTop} className={styles.item} to='/other'>Інше</Link>
+          <Link onClick={scrollToTop} className={styles.item} to='/other'>Рейтинги</Link>
        </nav>
       </Container>
     </section>

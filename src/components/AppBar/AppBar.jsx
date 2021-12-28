@@ -94,7 +94,7 @@ const AppBar = ({name}) => {
             onClick={scrollToTop} 
             className={styles.item} 
             style={({isActive})=>({color: isActive ? "rgb(102, 45, 145)": '',pointerEvents: isActive ? "none" : ""})} 
-            to='/events'>Події на факультеті
+            to='/graduates'>Випускники
           </NavLink>
 
           <NavLink 
@@ -109,7 +109,7 @@ const AppBar = ({name}) => {
             onClick={scrollToTop} 
             className={styles.item} 
             style={({isActive})=>({color: isActive ? "rgb(102, 45, 145)": '',pointerEvents: isActive ? "none" : ""})} 
-            to='/other'>Інше
+            to='/ratings'>Рейтинги
           </NavLink>
           </nav>
         </Offcanvas.Body>

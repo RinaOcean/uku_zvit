@@ -27,6 +27,7 @@
   font-family: "CirceRounded";
   font-weight: 900;
   font-size: 13px;
+  text-align: right;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
@@ -59,7 +60,7 @@
 
   .headerLabel {
     padding: 15px;
-    font-size: 16px;
+    font-size: 14px;
   }
 
   .logo {

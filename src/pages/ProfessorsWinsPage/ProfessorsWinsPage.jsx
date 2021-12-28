@@ -1,5 +1,6 @@
 import AppBar from '../../components/AppBar/AppBar';
 import Container from '../../components/Container';
+import { useState } from 'react';
 
 
 
@@ -13,34 +14,71 @@ import img5 from '../../imgs/profWins/prof-wins-05.jpg';
 import img6 from '../../imgs/profWins/prof-wins-06.jpg';
 
 
-const ProfessorsWinsPage = () => (
+const ProfessorsWinsPage = () => {
+  const [open1, setOpen1]= useState(false);
+  const [open2, setOpen2]= useState(false);
+  const [open3, setOpen3]= useState(false);
+  const [open4, setOpen4]= useState(false);
+  const [open5, setOpen5]= useState(false);
+  const [open6, setOpen6]= useState(false);
+
+  return(
   <>
    <AppBar name="Успіхи викладачів"/>
    <Container>
    <section className={styles.section}>
-     <div className={styles.imgWrapper}>
-       <img src={img1} alt="girl"/>
-       
+     <div className={styles.wrapper}>
+       <div className={styles.imgWrapper}>
+         <img className={styles.image} src={img1} alt="Juliya Kleban"/>
+         <button className={styles.expandBtn}  type="button" onClick={()=>{setOpen1(!open1)}}>
+          {open1? 
+           <span class="material-icons">
+             keyboard_double_arrow_up
+           </span> :
+           <span class="material-icons">
+             keyboard_double_arrow_down
+           </span>
+       }
+       </button>
+       </div>
+       {open1? 
        <p className={styles.description}>
          Протягом осіннього семестру 2021-2022 н.р керівниця бакалаврської програми 
-         “ІТ та бізнес-аналітика” Юлія Клебан перебуває на дослідницькому стажуванні
-         в США, м.Бостон за  за програмою Fulbright Ukraine Research and development 
-         program. Стажування відбувається на базі Бізнес-школи Університету, де 
+         “ІТ та бізнес-аналітика” <a href="https://apps.ucu.edu.ua/yulia-kleban/" className={styles.link}>Юлія Клебан</a> перебуває на дослідницькому стажуванні
+         в США, м.Бостон за  за програмою  <a href="https://fulbright.org.ua/uk/fulbright-research-and-development-program/" className={styles.link}>Fulbright Ukraine Research and development 
+         program</a>. Стажування відбувається на базі Бізнес-школи Університету, де 
          зосереджені основні програми Business Analytics та Data Science, які є у 
          фокусі професійних інтересів Юлії. Впродовж 6 місяців Юлія працює над темою 
          застосування Project-Based Learning підходу до навчання та викладання для 
          STEAM освітніх програм.
-       </p>
+       </p>: null
+       }
+
+      
      </div>
  
-     <div className={styles.imgWrapper}>
-       <img src={img2} alt="man"/>
+     <div className={styles.wrapper}>
+       <div className={styles.imgWrapper}>
+         <img  src={img2} alt="Oles Dobosevich"/>
+         <button className={styles.expandBtn}  type="button" onClick={()=>{setOpen2(!open2)}}>
+          {open2? 
+            <span class="material-icons">
+             keyboard_double_arrow_up
+            </span> :
+             <span class="material-icons">
+             keyboard_double_arrow_down
+            </span>
+          }
+         </button>
+
+       </div>
+       {open2?
        <p className={styles.description}>
          26 червня під час випускних урочистостей УКУ ректор о. Богдан Прах вручив 
          чотирьом викладачам ректорську премію за виняткові досягнення у науковій 
-         праці. Серед лауреатів був також Олесь Добосевич, який отримав свою 
-         нагороду за розбудову та наукові успіхи Лабораторії машинного навчання 
-         УКУ(MLLab). 
+         праці. Серед лауреатів був також <a href="https://apps.ucu.edu.ua/oles-dobosevych/" className={styles.link}>Олесь Добосевич</a>, 
+         який отримав свою нагороду за розбудову та наукові успіхи <a href="https://apps.ucu.edu.ua/mllab/" className={styles.link}>Лабораторії машинного навчання 
+         УКУ(MLLab)</a>. 
          «У 2018 році ми з колегами стартували Лабораторію машинного навчання УКУ, 
          яка є місцем для розвитку наукового потенціалу Факультету прикладних наук.
          Тут ми продовжуємо працювати над науковими розробками, які зокрема 
@@ -49,14 +87,28 @@ const ProfessorsWinsPage = () => (
          з індустрією та науковими колами. Тому ректорську премію приймаю як нагороду,
          котра для мене є свідченням перших результатів цієї лабораторії і 
          підтвердженням того, що робота, яку ми там проводимо, є важливою» - коментує 
-         свою нагороду Олесь Добосевич.
-       </p>
-     </div>
+         свою нагороду Олесь Добосевич.&nbsp;<a href="https://ucu.edu.ua/news/chetvero-vykladachiv-uku-staly-laureatamy-rektorskoyi-premiyi-2021-za-naukovi-doslidzhennya/" className={styles.link}>Детальніше</a>
+       </p>: null
+       }
+      </div>
  
-     <a href="https://ucu.edu.ua/news/vykladachi-roku-uku-2020-vrazhennya-ta-porady-vid-trijtsi-peremozhtsiv/" className={styles.imgWrapper}>
-       <img src={img3} alt="man"/>
+     <div className={styles.wrapper}>
+       <div className={styles.imgWrapper}>
+         <img src={img3} alt="Rostislav Hryniv"/>
+         <button className={styles.expandBtn}  type="button" onClick={()=>{setOpen3(!open3)}}>
+          {open3? 
+            <span class="material-icons">
+             keyboard_double_arrow_up
+            </span> :
+             <span class="material-icons">
+             keyboard_double_arrow_down
+            </span>
+          }
+         </button>
+       </div> 
+       {open3?
        <p className={styles.description}>
-         У 2020 році Ростислав Гринів, професор кафедри прикладної математики та 
+         У 2020 році <a href="https://apps.ucu.edu.ua/rostyslav-hryniv/" className={styles.link}>Ростислав Гринів</a>, професор кафедри прикладної математики та 
          статистики УКУ отримав відзнаку “Викладач року” від нашого Університету. 
          Кандидатів на відзнаку можуть висувати представники спільноти університету: 
          викладачі, працівники, студенти, аспіранти та випускники. Така нагорода є 
@@ -64,12 +116,27 @@ const ProfessorsWinsPage = () => (
          систематичну і багатопланову роботу зі студентами як в аудиторії, так поза 
          нею. Цією відзнакою академічна спільнота та студентство УКУ наголошують на 
          важливості належної оцінки якісного викладання в університеті та поширенні 
-         успішних викладацьких практик. 
-       </p>
-     </a>
+         успішних викладацьких практик.&nbsp;
+         <a href="https://ucu.edu.ua/news/vykladachi-roku-uku-2020-vrazhennya-ta-porady-vid-trijtsi-peremozhtsiv/" className={styles.link}>Детальніше</a>
+       </p>: null
+      }
+     </div>
  
-     <a href="https://ucu.edu.ua/news/yaroslav-prytula-nasha-formula-uspihu-zlagodzhena-robota-komandy-motyvovani-studenty-ta-rozvytok-naukovogo-vektoru-fakultetu/?fbclid=IwAR2gK9RBHKUMEEuWxWLnIrv-QHGhQq_3i3zMg89zSumATHGVTLGyneg6p7A" className={styles.imgWrapper}>
-       <img src={img4} alt="man"/>
+     <div  className={styles.wrapper}>
+       <div className={styles.imgWrapper}>
+       <img src={img4} alt="Yaroslav Prytula"/>
+       <button className={styles.expandBtn}  type="button" onClick={()=>{setOpen4(!open4)}}>
+          {open4? 
+            <span class="material-icons">
+             keyboard_double_arrow_up
+            </span> :
+             <span class="material-icons">
+             keyboard_double_arrow_down
+            </span>
+          }
+         </button>
+       </div>
+       {open4?
        <p className={styles.description}>
          У травні 2021 р. Вчена рада УКУ шляхом таємного голосування підтримала 
          продовження контракту на наступне 5-річчя декана Факультету прикладних 
@@ -83,12 +150,54 @@ const ProfessorsWinsPage = () => (
          Окрім цього, вже у вересні цього року Ярослав Притула був переобраний до 
          Сенату УКУ - колегіального органу управління та контролю Університету, який
          визначає основні засади і напрями його розвитку та приймає рішення з 
-         найважливіших питань його діяльності.
-       </p>
-     </a>
+         найважливіших питань його діяльності.&nbsp;
+         <a href="https://ucu.edu.ua/news/yaroslav-prytula-nasha-formula-uspihu-zlagodzhena-robota-komandy-motyvovani-studenty-ta-rozvytok-naukovogo-vektoru-fakultetu/?fbclid=IwAR2gK9RBHKUMEEuWxWLnIrv-QHGhQq_3i3zMg89zSumATHGVTLGyneg6p7A" className={styles.link}>Детальніше</a>
+       </p>: null
+      }
+     </div>
  
+     <div className={styles.wrapper}>
      <div className={styles.imgWrapper}>
-       <img src={img5} alt="man"/>
+       <img src={img5} alt="two men"/>
+       <button className={styles.expandBtn}  type="button" onClick={()=>{setOpen5(!open5)}}>
+          {open5? 
+            <span class="material-icons">
+             keyboard_double_arrow_up
+            </span> :
+             <span class="material-icons">
+             keyboard_double_arrow_down
+            </span>
+          }
+         </button>
+       </div>
+       {open5? 
+       <p className={styles.description}>
+         Програма викладацьких стипендій в УКУ діє завдяки підтримці жертводавців, 
+         які всіляко сприяють не лише забезпеченню гідної заробітної плати найкращим
+         викладачам, а й надають додаткові ресурси для їхнього професійного розвитку. 
+         У 2020 році такі стипендію від родини Любінців отримав <a className={styles.link} href="https://www.youtube.com/watch?v=L0Rw7dU6k6o&ab_channel=%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9%D0%9A%D0%B0%D1%82%D0%BE%D0%BB%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9%D0%A3%D0%BD%D1%96%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82">
+         Степан Фединяк</a>, заступник дакана факультету прикладних наук. Стипендію від 
+         Тараса Кицмея отримав <a className={styles.link} href="https://www.youtube.com/watch?v=ydnlhv5gCdQ&t=29s&ab_channel=%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9%D0%9A%D0%B0%D1%82%D0%BE%D0%BB%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9%D0%A3%D0%BD%D1%96%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82">Андрій Романюк</a> , доцент кафедри комп'ютерних наук 
+         та інформаційних технологій УКУ.
+      </p>: null
+      }
+     </div>
+ 
+     <div className={styles.wrapper}>
+     <div className={styles.imgWrapper}>
+       <img src={img6} alt="two men"/>
+       <button className={styles.expandBtn}  type="button" onClick={()=>{setOpen6(!open6)}}>
+          {open6? 
+            <span class="material-icons">
+             keyboard_double_arrow_up
+            </span> :
+             <span class="material-icons">
+             keyboard_double_arrow_down
+            </span>
+          }
+         </button>
+       </div>
+       {open6? 
        <p className={styles.description}>
          А вже у 2021 році викладацькі стипендії від родини Любінців та від 
          Тараса Кицмея отримали Олесь Добосевич, заступник декана факультету 
@@ -97,25 +206,14 @@ const ProfessorsWinsPage = () => (
          співзасновником та головою ради директорів компанії SoftServe, разом 
          із дружиною багато років підтримують наш університет. Тарас Кицмей - 
          співвласник і член ради директорів компанії SoftServe.
-      </p>
-     </div>
- 
-     <div className={styles.imgWrapper}>
-       <img src={img6} alt="man"/>
-       <p className={styles.description}>
-         Програма викладацьких стипендій в УКУ діє завдяки підтримці жертводавців, 
-         які всіляко сприяють не лише забезпеченню гідної заробітної плати найкращим
-         викладачам, а й надають додаткові ресурси для їхнього професійного розвитку. 
-         У 2020 році такі стипендію від родини Любінців отримав <a href="https://www.youtube.com/watch?v=L0Rw7dU6k6o&ab_channel=%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9%D0%9A%D0%B0%D1%82%D0%BE%D0%BB%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9%D0%A3%D0%BD%D1%96%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82">
-         Степан Фединяк</a>, заступник дакана факультету прикладних наук. Стипендію від 
-         Тараса Кицмея отримав <a href="https://www.youtube.com/watch?v=ydnlhv5gCdQ&t=29s&ab_channel=%D0%A3%D0%BA%D1%80%D0%B0%D1%97%D0%BD%D1%81%D1%8C%D0%BA%D0%B8%D0%B9%D0%9A%D0%B0%D1%82%D0%BE%D0%BB%D0%B8%D1%86%D1%8C%D0%BA%D0%B8%D0%B9%D0%A3%D0%BD%D1%96%D0%B2%D0%B5%D1%80%D1%81%D0%B8%D1%82%D0%B5%D1%82">Андрій Романюк</a> , доцент кафедри комп'ютерних наук 
-         та інформаційних технологій УКУ.
-      </p>
+        </p>: null
+      }
      </div>
  
  </section>
    </Container>
   </>
  )
- 
+ }
+
  export default ProfessorsWinsPage;

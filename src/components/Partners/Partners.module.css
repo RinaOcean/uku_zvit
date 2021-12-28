@@ -27,9 +27,17 @@
   letter-spacing: 0.25em;
 }
 
-.strategyPartners {
+.text{
   margin-top: 30px;
-  margin-bottom: 25px;
+  font-size: 14px;
+}
+
+.partnersHeading{
+  align-self: flex-start;
+}
+
+.strategyPartners {
+  margin-bottom: 30px;
 }
 
 .partners img {
@@ -41,8 +49,15 @@
     font-size: 14px;
     padding-left: 40px;
   }
-  .strategyPartners {
+
+  .text{
     margin-top: 50px;
+    font-size: 16px;
+    margin-bottom: 30px;
+  }
+
+  .partnersHeading {
+    font-size: 22px;
   }
 }
 
@@ -69,8 +84,18 @@
     font-size: 16px;
   }
 
-  .strategyPartners {
+  .text{
     margin-top: 50px;
+    font-size: 16px;
+    margin-bottom: 40px;
+  }
+
+
+  .partnersHeading {
+    font-size: 25px;
+  }
+
+  .strategyPartners {
     margin-bottom: 40px;
   }
 }
@@ -98,9 +123,17 @@
     font-size: 18px;
   }
 
-  .strategyPartners {
+  .text{
     margin-top: 100px;
-    margin-bottom: 80px;
+    font-size: 18px;
+    margin-bottom: 50px;
+  }
+  .partnersHeading{
+    font-size: 30px;
+  }
+
+  .strategyPartners {
+    margin-bottom: 50px;
   }
 }
 

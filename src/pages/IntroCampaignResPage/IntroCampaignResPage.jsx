@@ -15,16 +15,18 @@ const IntroCampaignResPage = () => (
   <Container>
   <section className={styles.section}>
     <div className={styles.imgWrapper}>
-<picture>
-  <source srcSet={deskImg1} media="(min-width:768px)"/>
-  <img src={mobImg1} className={styles.img} alt="Ukraine map"/>
-</picture>
-</div>
-<div className={styles.imgWrapper}>
-<picture>
-  <source srcSet={deskImg2} media="(min-width:768px)"/>
-  <img src={mobImg2} className={styles.img} alt="Ukraine map"/>
-</picture></div>
+      <picture>
+       <source srcSet={deskImg2} media="(min-width:768px)"/>
+       <img src={mobImg2} className={styles.img} alt="Ukraine map"/>
+      </picture>
+    </div>
+
+    <div className={styles.imgWrapper}>
+      <picture>
+       <source srcSet={deskImg1} media="(min-width:768px)"/>
+       <img src={mobImg1} className={styles.img} alt="Ukraine map"/>
+      </picture>
+    </div>
   </section>
   </Container>
   

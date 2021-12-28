@@ -10,11 +10,11 @@ const Header = ()=>{
       
         <img className={styles.logo} src={facultyLogoSvg} width="100" height="40" alt="logo" />
       
-      <span>Звіт 2020-2021</span>
+      <span>Академічний звіт 2020-2021</span>
     </div>
     <div className={styles.missionWrapper}>
       <h2 className={styles.missionHeading}>Місія</h2>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum ad sequi officiis veniam incidunt quo quam in dolorum laboriosam, ex maiores veritatis quae mollitia a dolor cupiditate doloremque vel qui?</p>
+      <p>Факультет прикладних наук УКУ готує лідерів галузі, що своїми знаннями, навичками і настановами змінюватимуть сьогоднішнє та майбутнє України та світу.</p>
     </div>
   </header>
   )

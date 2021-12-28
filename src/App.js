@@ -13,6 +13,9 @@ import StudentsWinsPage from './pages/StudentWinsPage/StudentsWinsPage';
 import ProfessorsWinsPage from './pages/ProfessorsWinsPage/ProfessorsWinsPage';
 import SocialProjectsPage from './pages/SocialProjectsPage';
 import CertificateProgramsPage from './pages/CertificateProgramsPage/CertificateProgramsPage';
+import SciencePage from './pages/SciencePage/SciencePage';
+import RatingsPage from './pages/RatingsPage/RatingsPage';
+import GraduatesPage from './pages/GraduatesPage';
 
 
 const  App = () => (
@@ -27,6 +30,9 @@ const  App = () => (
       <Route path="/professors-wins" element={<ProfessorsWinsPage/>}/>
       <Route path="/social-projects" element={<SocialProjectsPage/>}/>
       <Route path="/certificate-programs" element={<CertificateProgramsPage/>}/>
+      <Route path="/science" element={<SciencePage/>}/>
+      <Route path="/ratings" element={<RatingsPage/>}/>
+      <Route path="/graduates" element={<GraduatesPage/>}/>
     </Routes>
     <ScrollUpBtn/>
     <Footer/>
