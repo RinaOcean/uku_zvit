@@ -16,6 +16,7 @@ import CertificateProgramsPage from './pages/CertificateProgramsPage/Certificate
 import SciencePage from './pages/SciencePage/SciencePage';
 import RatingsPage from './pages/RatingsPage/RatingsPage';
 import GraduatesPage from './pages/GraduatesPage';
+import WhoWeArePage from './pages/WhoWeArePage/WhoWeArePage';
 
 
 const  App = () => (
@@ -33,6 +34,7 @@ const  App = () => (
       <Route path="/science" element={<SciencePage/>}/>
       <Route path="/ratings" element={<RatingsPage/>}/>
       <Route path="/graduates" element={<GraduatesPage/>}/>
+      <Route path="/who-we-are" element={<WhoWeArePage/>}/>
     </Routes>
     <ScrollUpBtn/>
     <Footer/>

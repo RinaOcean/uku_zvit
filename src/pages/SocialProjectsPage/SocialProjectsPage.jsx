@@ -8,6 +8,7 @@ import img3 from '../../imgs/socialProjects/project-03.jpg';
 import img4 from '../../imgs/socialProjects/project-04.jpg';
 import img5 from '../../imgs/socialProjects/project-05.jpg';
 import img6 from '../../imgs/socialProjects/project-06.jpg';
+import img7 from '../../imgs/socialProjects/project-07.jpg';
 
 import styles from './SocialProjectsPage.module.css'
 
@@ -232,7 +233,7 @@ const SocialProjectsPage = () => {
 
       <div className={styles.wrapper}>
         <div className={styles.imgWrapper}>
-       <img src={img3} alt="girl"/>
+       <img src={img7} alt="data science in real life"/>
        <button className={styles.expandBtn}  type="button" onClick={()=>{setOpen7(!open7)}}>
         {open7? 
         <span class="material-icons">
@@ -260,13 +261,16 @@ const SocialProjectsPage = () => {
          залежності між будівництвом нових житлових комплексів у місті і наявності 
          шкіл у цих місцях. До уваги також бралися показники успішності шкіл за 
          результатами ЗНО, які географічно знаходяться близько одна від одної.<br/>  
-
-У другому проекті студенти проаналізували різні проблемні аспекти у роботі громадського транспорту м.Львова. Серед них: аналіз оптимальності розташування зупинок громадського транспорту; повторюваності маршрутів громадського транспорту; аналіз мобільності містян на основі даних стільникового оператора зв’язку тощо. 
-Результати обох досліджень були передані до відповідних структур ЛМР для подальшої роботи.
-
-Курс “Data Science in real life” продовжується вже в новому році і на даний момент студент-магістри працюють з даними Prozorro.<br/>
-         <a className={styles.link}  href="https://ucu.edu.ua/news/velykden-razom-u-hersoni-vid-studentskogo-bratstva-uku/?fbclid=IwAR14ZzVFkW8AmFLknVLlPdhOhUbH_Ft4x7oYbXC84S1LsPMh4yrWx-pck58">Детальніше</a>
-        </p>: null
+         У другому проекті студенти проаналізували різні проблемні аспекти у роботі 
+         громадського транспорту м.Львова. Серед них: аналіз оптимальності 
+         розташування зупинок громадського транспорту; повторюваності маршрутів 
+         громадського транспорту; аналіз мобільності містян на основі даних 
+         стільникового оператора зв’язку тощо.<br/> 
+         Результати обох досліджень були передані до відповідних структур ЛМР для 
+         подальшої роботи.<br/> 
+         Курс “Data Science in real life” продовжується вже в новому році і на даний 
+         момент студент-магістри працюють з даними Prozorro.
+       </p>: null
        }
       </div>
       

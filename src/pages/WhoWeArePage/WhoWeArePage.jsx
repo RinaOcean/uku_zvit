@@ -1,27 +1,44 @@
 import AppBar from "../../components/AppBar/AppBar";
 import Container from "../../components/Container";
 
-import strategyIcon from "../../imgs/strategy/icon_strategy.svg";
-import icon1 from "../../imgs/strategy/group1.svg";
-import icon2 from "../../imgs/strategy/group2.svg";
-import icon3 from "../../imgs/strategy/group3.svg";
-import icon4 from "../../imgs/strategy/group4.svg";
-import icon5 from "../../imgs/strategy/group5.svg";
-import icon6 from "../../imgs/strategy/group6.svg";
+import styles from './WhoWeArePage.module.css';
+import flag from '../../imgs/whoWeAre/flag.svg';
+import employers from '../../imgs/whoWeAre/employers_.svg';
+import students from '../../imgs/whoWeAre/students_.svg';
 
-import styles from "./StrategyPage.module.css"
+const WhoWeArePage = () => (
 
-const StrategyPage = () =>(
   <>
-    <AppBar name="Стратегічні цілі факультету 2025"/>
+    <AppBar name="Хто ми?"/>
     <Container>
-      <section className={styles.strategy}>
-      <div className={styles.headingWrapper}>
-        <img className={styles.strategyIcon} src={strategyIcon} width='40' height='40' alt="ledder up"/>
-        <span className={styles.heading}>Стратегічні цілі <br/> факультету 2025</span>
-      </div>
+      <section className={styles.section}>
+      {/* <div className={styles.wrapper}> */}
+        <p className={styles.text}>
+          <p>
+          Факультет прикладних наук УКУ готує лідерів галузі, що своїми знаннями, 
+          навичками і настановами змінюватимуть сьогоднішнє та майбутнє України та світу.
+          </p>
+          <p>
 
-      <ul className={styles.list}>
+          </p>
+
+        </p>
+        <img className={styles.chartIcon} src={employers}  alt="employers"/>
+        <p className={styles.text}>
+          Наші бакалаврські програми ‘’Комп’ютерні науки’’, ‘’ІТ та бізнес-аналітика’’, 
+          а також дворічна магістерська програма з комп’ютерних наук за спеціалізацією 
+          ‘’Науки про дані’’ розширяють фронтири освіти у сфері комп’ютерних наук та 
+          інформаційних технологій, а наші випускники – не просто успішні працівники всесвітньовідомих ІТ компаній, вони є лідерами, що готові творити нові продукти і послуги, нові ідеї та нові сенси як у галузі інформаційних технологій, так і в інших сферах людського життя.
+        </p>
+         <img className={styles.chartIcon} src={students}   alt="students"/>
+         <p className={styles.text}>
+         Програми факультету розраховані на вмотивованих студентів, націлених на творчу 
+         самостійну працю над своїм професійним вдосконаленням і готових нести відповідальність
+         за використання унікальних нагод для навчання, які перед ними відкриє ця програма.
+        </p>
+      {/* </div> */}
+
+      {/* <ul className={styles.list}>
         <li className={styles.item}>
         <div className={styles.imgWrapper}>
           <img className={styles.listIcon} src={icon1} alt="dialog"/></div>
@@ -54,12 +71,13 @@ const StrategyPage = () =>(
          <div className={styles.imgWrapper}><img className={styles.listIcon}  src={icon6} alt="sector" /></div>
          <span className={styles.text}>факультет активно розбудовує спільноту друзів факультету та активно взаємодіє зі спільнотою, зокрема, через консалтинг, запровадження курсів суспільно-орієнтованого навчання та впровадження курсів "цифрового мислення" в світоглядне ядро та/чи загальноуніверситетські курси</span>
         </li>
-      </ul>
+      </ul> */}
       
       </section>
     </Container>
     
   </>
+
 );
 
-export default StrategyPage;
+export default WhoWeArePage;

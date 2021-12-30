@@ -10,6 +10,7 @@ const Chapters =()=>{
     <section className={styles.chapters}>
       <Container>
         <nav className={styles.itemsWrapper}>
+         <Link onClick={scrollToTop} className={styles.item} to='/who-we-are'>Хто ми?</Link>
           <Link onClick={scrollToTop} className={styles.item} to='/introductory-campaign-results'>Результати вступної кампанії</Link>
           <Link onClick={scrollToTop} className={styles.item} to='/strategy-goals'>Стратегічні цілі факультету</Link>
           <Link onClick={scrollToTop} className={styles.item} to='/structure-changes'>Структурні зміни</Link>
