@@ -28,10 +28,7 @@ const RatingsPage =()=>(
            <a className={styles.link} href="https://forbes.ua/ratings/reyting-fakultetiv-13042021-1356">Детальніше</a>
          </p>
         </div>
-        <div className={styles.imgWrapper}> 
-         <img src={ratings} alt="forbes rating"/>
-        </div>
-
+        
         <h2 className={styles.heading}>Рейтинг DOU</h2>
         <div className={styles.imgWrapper}> 
           <img src={dou} alt="dou" />

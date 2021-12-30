@@ -12,6 +12,9 @@ import img4 from '../../imgs/science/science_04.jpg';
 import img5 from '../../imgs/science/science_05.jpg';
 import img6 from '../../imgs/science/science_06.jpg';
 import img7 from '../../imgs/science/science_07.jpg';
+import eleks from '../../imgs/science/eleks.jpg';
+import soft from '../../imgs/science/soft.jpg';
+import fb from '../../imgs/science/pro-fb-na-sajt.jpg';
 
 const SciencePage = ()=>{
   const [open1, setOpen1]= useState(false);
@@ -27,6 +30,164 @@ const SciencePage = ()=>{
     <AppBar name="Наука"/>
     <Container>
    <section className={styles.section}>
+     <h3 className={styles.heading}>
+       Співпраця зі стратегічними партнерами у сфері науки та освіти
+     </h3>
+      
+      <div className={styles.wrapperPart}>
+     <div className={styles.imgWrapper}>
+       <img src={eleks} alt="eleks"/>
+     </div>
+     <h3 className={styles.banersHead}>Eleks</h3>
+     <p className={styles.description}>
+      <p>
+        <span className={styles.highlight}>Навчальні курси:</span><br/>
+      На щорічній основі працівники різних підрозділів Eleks долучаються до викладання 
+      навчальних дисциплін на факультет прикладних наук УКУ:
+
+      <ul>
+       <li>
+         <span className={styles.highlight}>Машинне навчання</span>(Data Science Office) - викладач - Тарас Фірман;
+       </li>
+       <li>
+         <span className={styles.highlight}>Прогнозування та дослідження операцій</span> (Data Science Office)- 
+         викладач -Тарас Фірман, Андрій Присяжник;
+       </li>
+      <li>
+        <span className={styles.highlight}>Дизайн продукту</span>(Product Design Office) - група 
+         викладачів з Eleks;
+      </li>
+      <li>
+        <span className={styles.highlight}>Практики бізнес аналізу в IT</span> (Business Analysis Office) викладач - Тарас Захарків, Голова Офісу Бізнес Аналізу.
+      </li>
+      </ul> 
+      </p>
+      
+     <p>
+      <span className={styles.highlight}>Зимова школа дизайну УКУ</span> - 
+      В’ячеслав Шестопалов, працює дизайн-менеджером в компанії та Євгеній Шикірявий – 
+      старший дизайнер в Eleks, спільно викладали блок “Інклюзивний дизайн”, а Ольга Ткаченко – 
+      Senior Marketing Designer в компанії Eleks навчала студентів основ візуального дизайну. 
+     </p>
+
+     <p>
+      8 студентів APPS UCU стажувалися у DS і RnD офісах Eleks
+     </p>
+
+     <p>
+     <span className={styles.highlight}>Спільні наукові розробки</span><br/>
+     Лабораторія машинного навчання факультету спільно з компанією Eleks прийняла участь 
+     у BraTS Challenge 2021 по виявленню ракових пухлин на зображенню магнітно резонансної 
+     томографії.
+     </p>
+
+      <p>
+      <span className={styles.highlight}>Сертифікаційна програма з Data Engineering</span> - значний внесок у формування ідеї програми 
+      з DE зробили також спеціалісти з Eleks, які активно долучилися до формування якісної 
+      пропозиції для ринку, а також активно консультували організаторів програми щодо актуальних
+      курсів необхідних для професії Data Engineer.
+      </p>
+     </p>
+     </div>
+      
+      <div className={styles.wrapperPart}> 
+     <div className={styles.imgWrapper}>
+       <img src={soft} alt="softserve"/>
+     </div>
+     <h2 className={styles.banersHead}>SoftServe</h2>
+     <p className={styles.description}>
+       <p>
+         10 дослідників. 7 наставників. 8 проектів. 6 наукових праць.
+       </p>
+
+       <p>
+         Так виглядає сьогодні наша наукова співпраця з компанією Softserve. В рамках 
+         співпраці ми створили дослідницьку групу на базі Лабораторії машинного навчання 
+         УКУ <a className={styles.link} href="https://demo.softserveinc.com/ucu-softserve-research-group/">(UCU-SoftServe Research Group at the Machine Learning Lab)</a>.
+      </p>
+
+      <p>
+        Викладачі та студенти університету та працівники компанії разом працюють над дослідницькими 
+        проектами, використовуючи останні досягнення машинного навчання в реальних галузевих 
+        дослідженнях. Студенти працюють під менторством експертів з R&D SoftServe. Разом команди 
+        спільно досліджують реконструкцію відсутніх частин у тривимірній хмарі точок або ж 
+        розробляють конвеєр, який ефективно виконує сегментацію для локалізації захворювання на 
+        рентгенівських знімках грудної клітки.
+      </p>
+     
+      <p>
+        Ось перелік ще кількох значних проектів, які реалізовуються у співпраці з Softserve:
+        <ul>
+         <li>ECG processing and analysis with DNNs</li>   
+         <li>Drug discovery: affinity prediction with ML</li> 
+         <li>Satellite imagery segmentation with DNN</li> 
+         <li>Binary neural networks optimization</li> 
+        </ul>
+      </p>     
+     
+      <p>
+        У контексті стратегічного партнерства компанія Softserve також спонсорує щорічні 
+        дослідницькі проекти, а також підтримує функціонування навчального курсу “Reinforcement 
+        Learning”, який викладається на магістерській програмі з Data Science, розробленого 
+        працівниками SoftServe для факультету прикладних наук УКУ.
+      </p>
+    
+      <p>
+             Значний внесок у формування нашої сертифікаційної програми з Data Engineering зробила 
+     компанія Softserve. Про внесок компанії у розвиток програми. а також про враження та 
+     думки щодо необхідності розвитку сегменту Data Engineering в Україні дивіться у <a className={styles.link} href="https://www.youtube.com/watch?v=weIPRKnWlP0&t=21s&ab_channel=SoftServeCareer">відео</a>
+      </p>
+
+     </p>
+     </div>
+
+     <div className={styles.wrapperPart}> 
+     <div className={styles.imgWrapper}>
+       <img src={fb} alt="facebook"/>
+     </div>
+     <h2 className={styles.banersHead}>Facebook</h2>
+     <p className={styles.description}>
+       <p>
+       У 2020 році компанія Facebook стала стратегічним партнером факультету прикладних наук УКУ. 
+       Компанія залучає викладачів, студентів та випускників факультету до реалізації спільних 
+       дослідницьких проектів у форматі Sponsored research agreement.
+       </p>
+
+       <p>
+         Укладення партнерства стало логічним результатом поступового поглиблення співпраці 
+         між <a className={styles.link} href="https://www.facebook.com/facebookrealitylabs/?__tn__=K-R-R&eid=ARAAt00MT2mWobioQbNdTTBM2jnGVpmv7W4qnLQyeatRqE_zrA9XoyoQB6HAX1SZ3yYC31S87bPqYhSE&fref=mentions&__xts__[0]=68.ARCClgjyFME70OPNXIbC0wVIH6Y71g3wTNl-vu4iVW6YHNOrJrlVd7LOy5PlqVJS5HXsRmhSceG5Lab2--euBFm7aFOxCwZcFYEB3KfiSC32Awk1QXTaSqunrn9_57GVrUfYMXPAI0xCJqvDI5LY-7_Wiw6hE8S2jHOOLGyJfxFiy9AF-sP3NhbwRVB43_dgWA6GDcfz6GA8enyrNDKzAb6G7faBCp631bRZixsnBfqbbHcl6SM8nuBBdDf0rV3_B11rLKViVNZYqNEEL9sE1qznpUxB9b2Jc5maqv0F5zmdRhEnEuGcVOvhib3trW7u8kITvv7aGE0VOx6N6uvzt7bl0Zis1j610ao9IBiVmD-D4og1sWrYpHYZA71DDxGKhnqf8Mcn4bYl6gukgKzBM8K1FmKuZWMKqFDF-1yEuiDppjxBAv5Sti6P8zmYdYyaRhvi6ocM7BkO8dnS-sYhYBqa5HbdZyxsZ8S0kzc">Facebook Reality Labs</a> 
+         та <a className={styles.link} href="https://apps.ucu.edu.ua/mllab/">наукової лабораторії машинного навчання УКУ</a>, які мають вже 
+         дворічний досвід реалізації спільних проектів. 
+      </p>
+
+      <p>
+        Так, випускниця магістерської програми наук про дані УКУ <a className={styles.link} href="https://apps.ucu.edu.ua/ylochman/">Ярослава Лочман</a> розпочинала 
+        свої наукові дослідження у галузі комп’ютерного бачення з фокусом на калібрування камер
+         у рамках дослідницької стипендії лабораторії машинного навчання з перших днів навчання.
+         Отримані нею результати  згодом дали їй можливість пройти 6-ти місячне стажування у 
+         Facebook Reality Labs у місті Піттсбург, США. 
+      </p>
+     
+      <p>
+       Крім того, компанія Facebook продовжує співпрацю з випускником бакалаврату факультету 
+       прикладних наук УКУ, <a className={styles.link} href="https://apps.ucu.edu.ua/liepieshov/">Костею Лєпєшовим</a>, який також працює у сфері комп’ютерного бачення. 
+       Facebook Reality Labs фінансує дослідження Кості, який під науковим керівництвом 
+       співробітника Facebook Reality Labs James Pritts розробляє методи для одночасної 
+       корекції геометричних ознак на зображенні та автокалібрування камери.
+      </p>
+
+      <p>
+       Sponsored research  agreement  з УКУ має допомогти поглибити подальші дослідження з 
+       автоматичного калібрування камер та застосування результатів у задачах стерео-бачення, 
+       візуальної локалізації, 3D реконструкції.
+      </p>  
+     </p>
+     </div>
+
+      <h3 className={styles.heading}>
+        Конференції та воркшопи 
+      </h3>
+     <div className={styles.workshops}>
    <div className={styles.wrapper}>
      <div className={styles.imgWrapper}>
       <img src={img1} alt="map"/>
@@ -245,7 +406,7 @@ const SciencePage = ()=>{
       }
 
     </div>
-
+    </div>
  </section>
    </Container>
   </>

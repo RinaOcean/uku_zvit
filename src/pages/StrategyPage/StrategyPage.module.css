@@ -9,7 +9,6 @@
 
 .headingWrapper{
   display: flex;
-  /* align-self: flex-start; */
   font-size: 16px;
   font-weight: 900;
   text-transform: uppercase;
@@ -17,12 +16,11 @@
 
 .strategyIcon{
   margin-right: 10px;
-  height: 35px;
+  height: 40px;
 }
 
 .list{
   position: relative;
-  
   margin-top: 40px;
   overflow: hidden;
 }
@@ -144,7 +142,7 @@
   
   .strategyIcon{
     margin-right: 10px;
-    height: 40px;
+    height: 45px;
   }
 
   .listIcon{
@@ -191,7 +189,7 @@
   
   .strategyIcon{
     margin-right: 10px;
-    height: 45px;
+    height: 50px;
   }
 
   .listIcon{
@@ -217,7 +215,6 @@
     flex-direction: column;
     align-self: flex-start;
     align-items: center;
-    /* width: 16%; */
     margin-top: 0px;
   }
 
@@ -242,19 +239,14 @@
 }
 
 @media (min-width:1400px) {
-  /* .strategy{
-    padding-top: 200px;
-    padding-bottom: 100px;
-  } */
-    
   .listIcon{
     height:70px;
     width: auto;
-   margin-bottom: 45px; 
+    margin-bottom: 45px; 
   }
   
   .item{
-  width: 16%;
+    width: 16%;
   }
   
 }

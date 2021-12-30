@@ -19,7 +19,7 @@ const Chapters =()=>{
           <Link onClick={scrollToTop} className={styles.item} to='/certificate-programs'>Сертифікаційні програми</Link>
           <Link onClick={scrollToTop} className={styles.item} to='/graduates'>Випускники</Link>
           <Link onClick={scrollToTop} className={styles.item} to='/science'>Наука</Link>
-          <Link onClick={scrollToTop} className={styles.item} to='/other'>Рейтинги</Link>
+          <Link onClick={scrollToTop} className={styles.item} to='/ratings'>Рейтинги</Link>
        </nav>
       </Container>
     </section>

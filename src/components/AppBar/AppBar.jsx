@@ -2,11 +2,28 @@ import facultyLogoSvg from '../../imgs/faculty_logo.svg';
 import menuSvg from '../../imgs/menu.svg';
 import { Link, NavLink } from 'react-router-dom';
 import Offcanvas from 'react-bootstrap/Offcanvas'
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 
 import styles from './AppBar.module.css'
 
 const AppBar = ({name}) => {
+  function useMediaQuery(query) {
+    const [matches, setMatches] = useState(false);
+    useEffect(
+      () => {
+        const mediaQuery = window.matchMedia(query);
+        setMatches(mediaQuery.matches);
+        const handler = (event) => setMatches(event.matches);
+        mediaQuery.addEventListener("change", handler);
+        return () => mediaQuery.removeEventListener("change", handler);
+      },
+      [] 
+    );
+    return matches;
+  }
+
+  const isActive = useMediaQuery('(min-width: 767px)');
+
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
@@ -28,7 +45,7 @@ const AppBar = ({name}) => {
       </Link>
       
       <div className={styles.nameGroup}>
-       <span className={styles.mainName}>Звіт 2020-2021</span>
+       <span className={styles.mainName}>{isActive?<span>Академічний</span>: null}звіт 2020-2021</span>
        <span className={styles.name}>{name}</span>
       </div>
 

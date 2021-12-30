@@ -3,9 +3,8 @@ import Container from '../../components/Container';
 
 import styles from './GraduatesPage.module.css';
 
-// import mainImgSmall from '../../imgs/graduates/grad-head-mob.jpg';
-import mainImgMedium from '../../imgs/graduates/grad-head-tablet.jpg';
-import mainImgMBig from '../../imgs/graduates/grad-head-desktop.jpg';
+import grad1ImgMedium from '../../imgs/graduates/Vypusk-FPN-004-tablet.jpg';
+import grad1ImgBig from '../../imgs/graduates/Vypusk-FPN-004-desktop.jpg';
 import gradImgMedium from '../../imgs/graduates/Vypusk-FPN-tablet.jpg';
 import gradImgMBig from '../../imgs/graduates/Vypusk-FPN-desktop.jpg';
 
@@ -17,9 +16,9 @@ const GraduatesPage = () => (
 <Container>
 <section className={styles.section}>
   <div className={styles.imgWrapper}>
-    <picture>
-      <source srcSet={mainImgMBig} media="(min-width:768px)"/>
-      <img src={mainImgMedium} className={styles.img} alt="APPS UCU ALUMNI"/>
+   <picture>
+      <source srcSet={gradImgMBig} media="(min-width:768px)"/>
+      <img src={gradImgMedium}  alt="happy students"/>
     </picture>
   </div>
 
@@ -38,8 +37,8 @@ const GraduatesPage = () => (
   </p>
     <div className={styles.imgWrapper}>
     <picture>
-      <source srcSet={gradImgMBig} media="(min-width:768px)"/>
-      <img src={gradImgMedium} className={styles.img} alt="happy students"/>
+      <source srcSet={grad1ImgBig} media="(min-width:768px)"/>
+      <img src={grad1ImgMedium} className={styles.img} alt="APPS UCU ALUMNI"/>
     </picture>
   </div>
   <p className={styles.description}>
