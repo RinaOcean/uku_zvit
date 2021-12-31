@@ -5,7 +5,6 @@ import styles from './RatingsPage.module.css';
 
 import dou from '../../imgs/ratings/dou-ua_vuzy-2020.jpg';
 import forbes from '../../imgs/ratings/forbes_02.jpg';
-import ratings from '../../imgs/ratings/forbes.jpg';
 
 const RatingsPage =()=>(
   <>

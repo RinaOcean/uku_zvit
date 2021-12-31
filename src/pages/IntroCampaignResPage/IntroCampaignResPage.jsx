@@ -1,6 +1,5 @@
 import AppBar from "../../components/AppBar/AppBar";
 import Container from "../../components/Container";
-import Footer from "../../components/Footer";
 
 import mobImg1 from "../../imgs/mobile/ukraine_mob.jpg";
 import deskImg1 from "../../imgs/desktop/ukraine.jpg";

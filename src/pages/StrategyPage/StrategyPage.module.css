@@ -73,7 +73,7 @@
 }
 
 .item::before {
-     transform: translate(-6px, 70%);
+  transform: translate(-6px, 70%);
   transform-origin: center left;
   left: 6px;
 }

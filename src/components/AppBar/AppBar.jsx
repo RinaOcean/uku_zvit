@@ -7,6 +7,7 @@ import { useEffect, useState } from 'react';
 import styles from './AppBar.module.css'
 
 const AppBar = ({name}) => {
+  
   function useMediaQuery(query) {
     const [matches, setMatches] = useState(false);
     useEffect(
@@ -17,7 +18,7 @@ const AppBar = ({name}) => {
         mediaQuery.addEventListener("change", handler);
         return () => mediaQuery.removeEventListener("change", handler);
       },
-      [] 
+      [query] 
     );
     return matches;
   }
@@ -60,6 +61,12 @@ const AppBar = ({name}) => {
         <Offcanvas.Body>
           <nav className={styles.itemsWrapper}>
             
+          <NavLink 
+            onClick={scrollToTop} className={styles.item} 
+            style={({isActive})=>({color: isActive ? "rgb(102, 45, 145)": '',pointerEvents: isActive ? "none" : ""})}
+            to='/who-we-are'>Хто ми?
+          </NavLink>   
+
           <NavLink 
             onClick={scrollToTop} className={styles.item} 
             style={({isActive})=>({color: isActive ? "rgb(102, 45, 145)": '',pointerEvents: isActive ? "none" : ""})}

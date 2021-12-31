@@ -25,34 +25,46 @@ const StrategyPage = () =>(
         <li className={styles.item}>
         <div className={styles.imgWrapper}>
           <img className={styles.listIcon} src={icon1} alt="dialog"/></div>
-         <span className={styles.text}>наші випускники є тими, хто творять нові робочі місця. Ми активно залучаємо студентів до викладення, науки та бізнес-проектів</span> 
+         <span className={styles.text}>наші випускники є тими, хто творять нові 
+         робочі місця. Ми активно залучаємо студентів до викладення, науки та
+          бізнес-проектів</span> 
         </li>
 
         <li className={styles.item}>
          <div className={styles.imgWrapper}>
            <img className={styles.listIcon}  src={icon2} alt="people connections"/></div>
-         <span className={styles.text}>сформована alumni спільнота, яка продовжує навчання та формування випускників впродовж життя та залучає їх до різних освітніх ініціатив</span>
+         <span className={styles.text}>сформована alumni спільнота, яка продовжує 
+         навчання та формування випускників впродовж життя та залучає їх до 
+         різних освітніх ініціатив</span>
         </li>
 
         <li className={styles.item}>
         <div className={styles.imgWrapper}>
          <img className={styles.listIcon} src={icon3}   alt="people"/></div>
-         <span className={styles.text}>сформована потужна команда постійних викладачів як через навчання молодих викладачів, так і через залучення зіркових викладачів. Ми піклуємось про наших працівників та створюємо комфортні умови онбордингу та праці</span>
+         <span className={styles.text}>сформована потужна команда постійних викладачів 
+         як через навчання молодих викладачів, так і через залучення зіркових викладачів. 
+         Ми піклуємось про наших працівників та створюємо комфортні умови онбордингу та 
+         праці</span>
         </li>
 
         <li className={styles.item}>
          <div className={styles.imgWrapper}><img className={styles.listIcon}  src={icon4}  alt="note" /></div>
-         <span className={styles.text}>науковий доробок та сформована мережа партнерств робить факультет помітним та співмірним з кращими прикладами у співмірних унівеситетах світу</span>
+         <span className={styles.text}>науковий доробок та сформована мережа партнерств 
+         робить факультет помітним та співмірним з кращими прикладами у співмірних
+         унівеситетах світу</span>
         </li>
 
         <li className={styles.item}>
          <div className={styles.imgWrapper}><img className={styles.listIcon} src={icon5}   alt="flags" /></div>
-         <span className={styles.text}>щодва роки факультет запускає нову сертифікаційну програму, яка у перспективі може стати дипломною</span>
+         <span className={styles.text}>факультет є майданчиком для постійних експериментів</span>
         </li>
 
         <li className={styles.item}>
          <div className={styles.imgWrapper}><img className={styles.listIcon}  src={icon6} alt="sector" /></div>
-         <span className={styles.text}>факультет активно розбудовує спільноту друзів факультету та активно взаємодіє зі спільнотою, зокрема, через консалтинг, запровадження курсів суспільно-орієнтованого навчання та впровадження курсів "цифрового мислення" в світоглядне ядро та/чи загальноуніверситетські курси</span>
+         <span className={styles.text}>факультет активно розбудовує спільноту друзів 
+         факультету та активно взаємодіє зі спільнотою, зокрема, через консалтинг, 
+         запровадження курсів суспільно-орієнтованого навчання та впровадження курсів 
+         "цифрового мислення" в світоглядне ядро та/чи загальноуніверситетські курси</span>
         </li>
       </ul>
       

@@ -1,8 +1,6 @@
 import Container from '../Container';
-// import eleksLogo from '../../imgs/desktop/partners/eleks_logo.png'
-// import fbLogo from '../../imgs/desktop/partners/facebook_logo.png'
-// import ssLogo from '../../imgs/desktop/partners/ss_logo.png'
-import partners from '../../imgs/mobile/partners/partners.png'
+
+import partners from '../../imgs/partners/partners.jpg'
 import strategyPartners from '../../imgs/partners/strategy_partners.png'
 import styles from './Partners.module.css';
 

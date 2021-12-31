@@ -1,7 +1,5 @@
 import AppBar from "../../components/AppBar/AppBar";
 import Container from "../../components/Container";
-import Footer from "../../components/Footer";
-
 
 import imgSmall from '../../imgs/mobile/structure-changes-mob.jpg'
 import imgBig from '../../imgs/desktop/structure-changes-desk.jpg'
@@ -46,7 +44,7 @@ const StructureChangesPage = () => (
        працівник <a className={styles.link}  href="https://apps.ucu.edu.ua/mllab/">ML Lab UCU</a> та 
        випускник програми з DS тепер також допомагатиме координувати нашу магістерську програму;&nbsp;  
        <a className={styles.link}  href="https://www.facebook.com/hrynykha.andriy">Андрій Гриниха</a>, окрім комунікаційного напрямку 
-       на факультеті тепер також координуватиме програму з CS, а <a className={styles.link}  href="https://www.facebook.com/halinka.prystash">Галина Кирилейза</a> з BA.&nbsp;  
+       на факультеті тепер також координуватиме програму з CS, а <a className={styles.link}  href="https://www.facebook.com/halinka.prystash">Галина Кирилейза</a> з IT&BA.&nbsp;  
        <a className={styles.link}  href="https://www.facebook.com/khrystyna.yakymets.9">Христина Якимець</a> підтримуватиме роботу деканату 
        факультету та, зокрема, розвиватиме напрямок співпраці з нашими APPS UCU Alumni.
        </p>
