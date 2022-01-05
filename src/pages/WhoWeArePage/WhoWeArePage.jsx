@@ -120,7 +120,7 @@ const WhoWeArePage = () => (
         <li className={styles.item}>
          <div className={styles.imgWrapper}><img className={styles.listIcon}  src={img10} alt="data analitics" /></div>
          <p className={styles.descrptn}>відкриття сертифікаційної програми з Аналітики даних</p>
-         <p className={styles.year}>2020</p>
+         <p className={styles.year}>2021</p>
         </li>
         <div className={styles.bgbottom}></div>
       </ul>
